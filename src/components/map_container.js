@@ -57,14 +57,14 @@ export default function MapContainer() {
                   position: "absolute",
                   fontSize: "7px",
                   fontWeight: "bold",
-                  backgroundColor: "white",
+                  backgroundColor: "yellow",
                   padding: "8px",
                   borderRadius: "5px",
                   boxShadow: "0 0 5px 0 rgba(0, 0, 0, 0.2)",
                   left: "300px",
                   top: "100px",
-                  width: "180px",
-                  height: "120px",
+                  width: "280px",
+                  height: "140px",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "center",
@@ -75,7 +75,7 @@ export default function MapContainer() {
                   .map((weather) => (
                     <div key={weather.district}>
                       <p style={{ fontSize: "12px" }}>
-                        Temperature: {weather._temperature}°C
+                        Temperature: {weather._temp}°C
                       </p>
                       <p style={{ fontSize: "12px" }}>
                         Humidity: {weather._humidity}%
@@ -84,7 +84,7 @@ export default function MapContainer() {
                         Air Pressure: {weather._airPressure} hPa
                       </p>
                       <p style={{ fontSize: "12px" }}>
-                        Last Updated: {weather._lastUpdatedDateTime}
+                        Last Updated: {weather._UpdatedDateTime}
                       </p>
                       {weather.updatedNow && (
                         <p>{weather._district} updated now!</p>
