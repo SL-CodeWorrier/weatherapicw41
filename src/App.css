@@ -37,7 +37,7 @@
   }
 }
 
-.container{
+.container {
   position: inherit;
   padding-left: 10px;
   width: 90%;
@@ -67,12 +67,12 @@
 
 .button-86::after,
 .button-86::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: -99999;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .button-86::before {
@@ -125,7 +125,7 @@ td {
   padding: 10px;
 }
 
-.td-column{
+.td-column {
   width: 100%;
 }
 
@@ -160,5 +160,15 @@ td {
 }
 
 .weather-card p:last-child::after {
-  content: '\00A0'; /* Add a non-breaking space after the last paragraph */
+  content: "\00A0"; /* Add a non-breaking space after the last paragraph */
+}
+
+.map_path {
+  fill: #67df75;
+  stroke: #000000;
+  stroke-width: 0.5;
+}
+
+.map_path:hover {
+  fill: #21b635;
 }

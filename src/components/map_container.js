@@ -27,7 +27,7 @@ export default function MapContainer() {
   };
 
   return (
-    <div>
+    <div style={{ height: "100vh" }}>
       <div style={{ position: "relative" }}>
         <MapSvg />
         {Districts.map((district) => (
